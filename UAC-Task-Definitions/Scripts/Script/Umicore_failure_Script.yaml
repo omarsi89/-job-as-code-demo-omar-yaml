@@ -3,7 +3,7 @@ content: |-
   echo "**Input File found and Initiating scan process"
   echo "**Problem in the data records - Verify the input file"
   echo "X---Scan process Aborted---X"
-  exit 100
+  exit 200
 description:
 exportReleaseLevel: 7.9.1.0
 exportTable: ops_script
