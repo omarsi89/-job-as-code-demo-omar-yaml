@@ -10,6 +10,8 @@ agentCluster:
 agentClusterVar:
 agentVar:
 autoCleanup: false
+avgRunTime: 1
+avgRunTimeDisplay: 1 Seconds
 booleanField1:
   label: UC SSL Certificate  Verification
   name: uc_ssl_cert_verification
@@ -122,7 +124,7 @@ exitCodeText:
 exitCodes: '0'
 exportReleaseLevel: 7.9.1.0
 exportTable: ops_task_universal
-firstRun: ''
+firstRun: 2025-12-10 09:22:19 +0000
 holdResources: false
 intField1:
   label: spacing
@@ -144,7 +146,9 @@ largeTextField4:
   label: Webhook Payload (Bitbucket or Azure DevOps)
   name: webhook_payload
   value:
-lastRun: ''
+lastRun: 2025-12-10 09:22:19 +0000
+lastRunTime: 1
+lastRunTimeDisplay: 1 Seconds
 lfDayConstraint: None
 lfDuration: 00:00:00:00
 lfEnabled: false
@@ -163,6 +167,10 @@ lsEnabled: false
 lsNthAmount: 5
 lsTime: 00:00
 lsType: Time
+maxRunTime: 1
+maxRunTimeDisplay: 1 Seconds
+minRunTime: 1
+minRunTimeDisplay: 1 Seconds
 name: JAC-Pull-from-Github - Yaml
 notes: []
 opswiseGroups:
@@ -195,8 +203,8 @@ retryIndefinitely: false
 retryInterval: 60
 retryMaximum: 0
 retrySuppressFailure: false
-runCount: 0
-runTime: 0
+runCount: 1
+runTime: 1
 runtimeDir:
 simulation: false
 startHeld: false

@@ -1,0 +1,18 @@
+content: |-
+  echo "**Locating the Input file for SCAN"
+  echo "**Input File found and Initiating scan process"
+  echo "**Problem in the data records - Verify the input file"
+  echo "X---Scan process Aborted---X"
+  exit 100
+description:
+exportReleaseLevel: 7.9.1.0
+exportTable: ops_script
+notes: []
+opswiseGroups:
+- stonebranch
+resolveVariables: true
+retainSysIds: true
+scriptName: Umicore_failure_Script
+scriptType: Script
+sysId: c9e7efae4cf04f65bcad425733859255
+version: 1
