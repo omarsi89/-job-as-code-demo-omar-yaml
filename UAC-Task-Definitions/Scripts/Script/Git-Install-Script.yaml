@@ -21,7 +21,7 @@ content: |
   date > /tmp/ns_install_packages_simulated.flag
 
   echo "installation completed successfully."
-  exit 301
+  exit 401
 description:
 exportReleaseLevel: 7.9.1.0
 exportTable: ops_script
