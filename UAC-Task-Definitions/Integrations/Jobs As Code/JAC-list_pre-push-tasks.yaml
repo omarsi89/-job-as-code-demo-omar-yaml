@@ -1,0 +1,300 @@
+type: taskUniversal
+actions:
+  abortActions: []
+  emailNotifications: []
+  setVariableActions: []
+  snmpNotifications: []
+  systemOperations: []
+agent: SB_Linux_Agent
+agentCluster:
+agentClusterVar:
+agentVar:
+autoCleanup: false
+avgRunTime: 4
+avgRunTimeDisplay: 4 Seconds
+booleanField1:
+  label: UC SSL Certificate  Verification
+  name: uc_ssl_cert_verification
+  value: false
+booleanField2:
+  label: Git Host Verification
+  name: git_ssl_cert_verification
+  value: true
+booleanField3:
+  label: Use Regular Expression
+  name: use_regular_expression
+  value: false
+booleanField4:
+  label: Sign commit
+  name: sign_commit
+  value: false
+broadcastCluster:
+broadcastClusterVar:
+choiceField1:
+  label: Action
+  name: action
+  value: List UAC Definitions
+choiceField10:
+  label: Import Mode
+  name: import_mode
+  value: Generic Webhook and Custom Mode
+choiceField11:
+  label: Git Protocol
+  name: git_protocol
+  value: HTTP(S)
+choiceField2:
+  label: Selection Method
+  name: selection_method
+  value: businessservice
+choiceField3:
+  label: Selection Name
+  name: selection_name
+  value: stonebranch
+choiceField4:
+  label: Selection Exclude List
+  name: selection_exclude_list
+  value:
+choiceField5:
+  label: Git Service Provider
+  name: git_service_provider
+  value: GitLab
+choiceField6:
+  label: Git Repository File Format
+  name: git_repository_file_format
+  value: Yaml
+choiceField7:
+  label: Git Repository
+  name: git_repository
+  value:
+choiceField8:
+  label: Git Repository Branch
+  name: git_repository_branch
+  value:
+choiceField9:
+  label: Proxy Type
+  name: proxy_type
+  value: -- None --
+cpDuration:
+cpDurationUnit: Minutes
+createConsole: false
+credentialField1:
+  label: Universal Controller Credentials
+  name: uc_credentials
+  value: Controller_credential
+credentialField2:
+  label: Git Credentials
+  name: git_credentials
+  value:
+credentialField3:
+  label: Proxy Credentials
+  name: proxy_credentials
+  value:
+credentialField4:
+  label: Signing Credentials
+  name: signing_credentials
+  value:
+credentials:
+credentialsVar:
+customField1:
+  label:
+  value:
+customField2:
+  label:
+  value:
+desktopInteract: false
+efDayConstraint: None
+efDuration: 00:00:00:00
+efEnabled: false
+efNthAmount: 5
+efOffsetDuration:
+efOffsetDurationUnit: Minutes
+efOffsetPercentage: 0
+efOffsetType: Percentage
+efTime: 00:00
+efType: Time
+elevateUser: false
+enforceVariables: false
+environment: []
+exclusiveTasks: []
+exclusiveWithSelf: false
+executionRestriction: None
+exitCodeOutput:
+exitCodeProcessing: Success Exitcode Range
+exitCodeText:
+exitCodes: '0'
+exportReleaseLevel: 7.9.1.0
+exportTable: ops_task_universal
+firstRun: 2025-12-10 08:30:38 +0000
+holdResources: false
+intField1:
+  label: spacing
+  name: spacing
+  value:
+largeTextField1:
+  label: Add UC Definitions List
+  name: add_uc_definitions_list
+  value:
+largeTextField2:
+  label: Modify UC Definitions List
+  name: modify_uc_definitions_list
+  value:
+largeTextField3:
+  label: Remove UC Definitions List
+  name: remove_uc_definitions_list
+  value:
+largeTextField4:
+  label: Webhook Payload (Bitbucket or Azure DevOps)
+  name: webhook_payload
+  value:
+lastRun: 2025-12-10 08:32:05 +0000
+lastRunTime: 4
+lastRunTimeDisplay: 4 Seconds
+lfDayConstraint: None
+lfDuration: 00:00:00:00
+lfEnabled: false
+lfNthAmount: 5
+lfOffsetDuration:
+lfOffsetDurationUnit: Minutes
+lfOffsetPercentage: 0
+lfOffsetType: Percentage
+lfTime: 00:00
+lfType: Time
+lockVariables: false
+logLevel: Inherited
+lsDayConstraint: None
+lsDuration: 00:00:00:00
+lsEnabled: false
+lsNthAmount: 5
+lsTime: 00:00
+lsType: Time
+maxRunTime: 4
+maxRunTimeDisplay: 4 Seconds
+minRunTime: 4
+minRunTimeDisplay: 4 Seconds
+name: JAC-list_pre-push-tasks
+notes: []
+opswiseGroups:
+- stonebranch
+outputConditionOperator: '='
+outputConditionStrategy: Match Any
+outputConditionValue:
+outputContentType: Text
+outputFailureOnly: false
+outputPathExpression:
+outputReturnFile:
+outputReturnNline:
+outputReturnSline: '1'
+outputReturnText:
+outputReturnType: OUTERR
+outputType: STDOUT
+overrideInstanceWait: "No"
+resPriority: 10
+resPriorityVar:
+resolveNameImmediately: false
+restrictionPeriod: None
+restrictionPeriodAfterDate:
+restrictionPeriodAfterTime:
+restrictionPeriodBeforeDate:
+restrictionPeriodBeforeTime:
+restrictionPeriodDateList: []
+retainSysIds: true
+retryExitCodes:
+retryIndefinitely: false
+retryInterval: 60
+retryMaximum: 0
+retrySuppressFailure: false
+runCount: 2
+runTime: 8
+runtimeDir:
+simulation: false
+startHeld: false
+startHeldReason:
+summary:
+sysId: 71ccc8b082dd464fb254e59eaec558f8
+template: Jobs As Code
+textField1:
+  label: Universal Controller URL
+  name: uc_url
+  value: https://umicore.stonebranchdev.cloud/
+textField2:
+  label: Git Service Provider URL
+  name: git_service_provider_url
+  value:
+textField3:
+  label: Git Repository Path
+  name: git_repository_path
+  value:
+textField4:
+  label: Proxy
+  name: proxy
+  value:
+textField5:
+  label: Proxy CA Bundle File
+  name: proxy_ca_bundle_file
+  value:
+textField6:
+  label: Git Commit Message (export)
+  name: git_commit_message
+  value:
+textField9:
+  label: Git Repository
+  name: git_repository_ssh
+  value:
+timeZonePref: -- System Default --
+twDelayAmount:
+twDelayDuration: 00:00:00:00
+twDelayType: None
+twWaitAmount:
+twWaitDayConstraint: None
+twWaitDuration: 00:00:00:00
+twWaitTime: 00:00
+twWaitType: None
+twWorkflowOnly: -- System Default --
+userEstimatedDuration:
+variables:
+- allowEmptyOption: false
+  allowUnlistedOption: false
+  description:
+  name: Github_added
+  options: []
+  required: false
+  sysId: f24e40ae587b4050b874e40bfb6d1fc9
+  value: ${_varJsonPath('ops_trigger_githubevent_payload', '$.commits[*].added[*]',
+    '', ',')}
+- allowEmptyOption: false
+  allowUnlistedOption: false
+  description:
+  name: Github_commit_title
+  options: []
+  required: false
+  sysId: 6599b53febc94069aa0d98f71d4c1e76
+  value: ${_varJsonPath('ops_trigger_githubevent_payload', '$.commits[0].title')}
+- allowEmptyOption: false
+  allowUnlistedOption: false
+  description:
+  name: Github_modified
+  options: []
+  required: false
+  sysId: 470530048fd141b2a3dc6de5db8dd916
+  value: ${_varJsonPath('ops_trigger_githubevent_payload', '$.commits[*].modified[*]',
+    '', ',')}
+- allowEmptyOption: false
+  allowUnlistedOption: false
+  description:
+  name: Github_removed
+  options: []
+  required: false
+  sysId: 478d305eb92f4ebeb855a6883f90bcc5
+  value: ${_varJsonPath('ops_trigger_githubevent_payload', '$.commits[*].removed[*]',
+    '', ',')}
+- allowEmptyOption: false
+  allowUnlistedOption: false
+  description:
+  name: Github_repository
+  options: []
+  required: false
+  sysId: 61769819d7b74f3aba34dbad9a57aa71
+  value: ${_varJsonPath('ops_trigger_githubevent_payload', '$.repository.full_name')}
+version: 2
+virtualResources: []
+waitForOutput: false

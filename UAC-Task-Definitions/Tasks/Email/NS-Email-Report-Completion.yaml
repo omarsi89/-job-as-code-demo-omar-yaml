@@ -1,0 +1,118 @@
+type: taskEmail
+actions:
+  abortActions: []
+  emailNotifications: []
+  setVariableActions: []
+  snmpNotifications: []
+  systemOperations: []
+avgRunTime: 4
+avgRunTimeDisplay: 4 Seconds
+bccRecipients:
+body: |-
+  Hello ,
+
+  Please find attached report from workflow : ${ops_workflow_name}
+
+
+  Regards,
+  Stonebranch Ops Team
+ccRecipients:
+connection: email
+cpDuration:
+cpDurationUnit: Minutes
+customField1:
+  label:
+  value:
+customField2:
+  label:
+  value:
+efDayConstraint: None
+efDuration: 00:00:00:00
+efEnabled: false
+efNthAmount: 5
+efOffsetDuration:
+efOffsetDurationUnit: Minutes
+efOffsetPercentage: 0
+efOffsetType: Percentage
+efTime: 00:00
+efType: Time
+enforceVariables: false
+exclusiveTasks: []
+exclusiveWithSelf: false
+executionRestriction: None
+exportReleaseLevel: 7.9.1.0
+exportTable: ops_task_email
+firstRun: 2025-12-04 10:39:09 +0000
+holdResources: false
+lastRun: 2025-12-08 10:33:39 +0000
+lastRunTime: 4
+lastRunTimeDisplay: 4 Seconds
+lfDayConstraint: None
+lfDuration: 00:00:00:00
+lfEnabled: false
+lfNthAmount: 5
+lfOffsetDuration:
+lfOffsetDurationUnit: Minutes
+lfOffsetPercentage: 0
+lfOffsetType: Percentage
+lfTime: 00:00
+lfType: Time
+listReportFormat: PDF
+lockVariables: false
+logLevel: Inherited
+lsDayConstraint: None
+lsDuration: 00:00:00:00
+lsEnabled: false
+lsNthAmount: 5
+lsTime: 00:00
+lsType: Time
+maxRunTime: 4
+maxRunTimeDisplay: 4 Seconds
+minRunTime: 3
+minRunTimeDisplay: 3 Seconds
+name: NS-Email-Report-Completion
+notes: []
+opswiseGroups:
+- Nadim Schamsedin
+overrideInstanceWait: "No"
+replyTo:
+report:
+  title: Workflow-Report
+  userName: nadim
+  groupName:
+reportVar:
+resPriority: 10
+resPriorityVar:
+resolveNameImmediately: true
+restrictionPeriod: None
+restrictionPeriodAfterDate:
+restrictionPeriodAfterTime:
+restrictionPeriodBeforeDate:
+restrictionPeriodBeforeTime:
+restrictionPeriodDateList: []
+retainSysIds: true
+runCount: 3
+runTime: 11
+simulation: false
+startHeld: false
+startHeldReason:
+subject: 'Workflow: ${ops_workflow_name} Completed'
+summary: '!! Donot Change the Job !!!'
+sysId: a5a2fa895ded44bba62c2861c71d277a
+template:
+templateVar:
+timeZonePref: -- System Default --
+toRecipients: ${email}
+twDelayAmount:
+twDelayDuration: 00:00:00:00
+twDelayType: None
+twWaitAmount:
+twWaitDayConstraint: None
+twWaitDuration: 00:00:00:00
+twWaitTime: 00:00
+twWaitType: None
+twWorkflowOnly: -- System Default --
+userEstimatedDuration:
+variables: []
+version: 5
+virtualResources: []

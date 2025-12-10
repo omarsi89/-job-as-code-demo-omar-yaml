@@ -1,0 +1,119 @@
+type: taskUnix
+actions:
+  abortActions: []
+  emailNotifications: []
+  setVariableActions: []
+  snmpNotifications: []
+  systemOperations: []
+agent: SB_Linux_Agent
+agentCluster:
+agentClusterVar:
+agentVar:
+broadcastCluster:
+broadcastClusterVar:
+command: sudo dnf upgrade -y
+commandOrScript: Command
+cpDuration:
+cpDurationUnit: Minutes
+credentials:
+credentialsVar:
+customField1:
+  label:
+  value:
+customField2:
+  label:
+  value:
+efDayConstraint: None
+efDuration: 00:00:00:00
+efEnabled: false
+efNthAmount: 5
+efOffsetDuration:
+efOffsetDurationUnit: Minutes
+efOffsetPercentage: 0
+efOffsetType: Percentage
+efTime: 00:00
+efType: Time
+enforceVariables: false
+environment: []
+exclusiveTasks: []
+exclusiveWithSelf: false
+executionRestriction: None
+exitCodeOutput:
+exitCodeProcessing: Success Exitcode Range
+exitCodeText:
+exitCodes: '0'
+exportReleaseLevel: 7.9.1.0
+exportTable: ops_task_unix
+firstRun: ''
+holdResources: false
+lastRun: ''
+lfDayConstraint: None
+lfDuration: 00:00:00:00
+lfEnabled: false
+lfNthAmount: 5
+lfOffsetDuration:
+lfOffsetDurationUnit: Minutes
+lfOffsetPercentage: 0
+lfOffsetType: Percentage
+lfTime: 00:00
+lfType: Time
+lockVariables: false
+logLevel: Inherited
+lsDayConstraint: None
+lsDuration: 00:00:00:00
+lsEnabled: false
+lsNthAmount: 5
+lsTime: 00:00
+lsType: Time
+name: NS-Upgrade-System
+notes: []
+opswiseGroups: []
+outputFailureOnly: false
+outputReturnFile:
+outputReturnNline: '100'
+outputReturnSline: '1'
+outputReturnText:
+outputReturnType: NONE
+outputType: STDOUT
+overrideInstanceWait: "No"
+parameters:
+resPriority: 10
+resPriorityVar:
+resolveNameImmediately: false
+restrictionPeriod: None
+restrictionPeriodAfterDate:
+restrictionPeriodAfterTime:
+restrictionPeriodBeforeDate:
+restrictionPeriodBeforeTime:
+restrictionPeriodDateList: []
+retainSysIds: true
+retryExitCodes:
+retryIndefinitely: false
+retryInterval: 60
+retryMaximum: 0
+retrySuppressFailure: false
+runAsSudo: false
+runCount: 0
+runTime: 0
+runtimeDir:
+script:
+simulation: false
+startHeld: false
+startHeldReason:
+summary:
+sysId: c87830960f5e42709b7159ef8575c8f1
+timeZonePref: -- System Default --
+twDelayAmount:
+twDelayDuration: 00:00:00:00
+twDelayType: None
+twWaitAmount:
+twWaitDayConstraint: None
+twWaitDuration: 00:00:00:00
+twWaitTime: 00:00
+twWaitType: None
+twWorkflowOnly: -- System Default --
+userEstimatedDuration:
+variables: []
+version: 2
+virtualResources: []
+waitForOutput: false

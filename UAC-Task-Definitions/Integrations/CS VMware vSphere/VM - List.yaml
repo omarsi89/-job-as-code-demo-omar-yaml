@@ -1,0 +1,177 @@
+type: taskUniversal
+actions:
+  abortActions: []
+  emailNotifications: []
+  setVariableActions: []
+  snmpNotifications: []
+  systemOperations: []
+agent: SB_Linux_Agent
+agentCluster:
+agentClusterVar:
+agentVar:
+autoCleanup: false
+booleanField1:
+  label: Force deletion
+  name: forcedelete
+  value: false
+broadcastCluster:
+broadcastClusterVar:
+choiceField1:
+  label: VMware Function
+  name: vmware_function
+  value: List VM
+cpDuration:
+cpDurationUnit: Minutes
+createConsole: false
+credentialField1:
+  label: vCenter Credentials
+  name: credentials
+  value: vmware vcenter
+credentialField2:
+  label: EXSi Host Credentials
+  name: host_credentials
+  value:
+credentials:
+credentialsVar:
+customField1:
+  label:
+  value:
+customField2:
+  label:
+  value:
+desktopInteract: false
+efDayConstraint: None
+efDuration: 00:00:00:00
+efEnabled: false
+efNthAmount: 5
+efOffsetDuration:
+efOffsetDurationUnit: Minutes
+efOffsetPercentage: 0
+efOffsetType: Percentage
+efTime: 00:00
+efType: Time
+elevateUser: false
+enforceVariables: false
+environment: []
+exclusiveTasks: []
+exclusiveWithSelf: false
+executionRestriction: None
+exitCodeOutput:
+exitCodeProcessing: Success Exitcode Range
+exitCodeText:
+exitCodes: '0'
+exportReleaseLevel: 7.9.1.0
+exportTable: ops_task_universal
+firstRun: ''
+holdResources: false
+lastRun: ''
+lfDayConstraint: None
+lfDuration: 00:00:00:00
+lfEnabled: false
+lfNthAmount: 5
+lfOffsetDuration:
+lfOffsetDurationUnit: Minutes
+lfOffsetPercentage: 0
+lfOffsetType: Percentage
+lfTime: 00:00
+lfType: Time
+lockVariables: false
+logLevel: Inherited
+lsDayConstraint: None
+lsDuration: 00:00:00:00
+lsEnabled: false
+lsNthAmount: 5
+lsTime: 00:00
+lsType: Time
+name: VM - List
+notes: []
+opswiseGroups:
+- Karthik Mohan
+outputConditionOperator: '='
+outputConditionStrategy: Match Any
+outputConditionValue:
+outputContentType: Text
+outputFailureOnly: false
+outputPathExpression:
+outputReturnFile:
+outputReturnNline: '100'
+outputReturnSline: '1'
+outputReturnText:
+outputReturnType: OUTERR
+outputType: STDOUT
+overrideInstanceWait: "No"
+resPriority: 10
+resPriorityVar:
+resolveNameImmediately: false
+restrictionPeriod: None
+restrictionPeriodAfterDate:
+restrictionPeriodAfterTime:
+restrictionPeriodBeforeDate:
+restrictionPeriodBeforeTime:
+restrictionPeriodDateList: []
+retainSysIds: true
+retryExitCodes:
+retryIndefinitely: false
+retryInterval: 60
+retryMaximum: 0
+retrySuppressFailure: false
+runCount: 0
+runTime: 0
+runtimeDir:
+scriptField1:
+  label: VM Configuration
+  name: vm_config
+  value:
+simulation: false
+startHeld: false
+startHeldReason:
+summary: List all Virtual machines
+sysId: 234a7f91f3ea4a12ac137b3661408287
+template: CS VMware vSphere
+textField1:
+  label: vCenter Hostname/IP address
+  name: hostname
+  value: ${vcenter}
+textField2:
+  label: New Datacenter name
+  name: new_datacenter
+  value:
+textField3:
+  label: VM Name
+  name: vmname
+  value:
+textField4:
+  label: Folder Name
+  name: foldername
+  value:
+textField5:
+  label: Datacenter name
+  name: datacenter
+  value:
+textField6:
+  label: ESXi Hostname / IP address
+  name: new_hostname
+  value:
+textField7:
+  label: New VM Name
+  name: clonevmname
+  value:
+textField8:
+  label: Host name
+  name: hostname1
+  value:
+timeZonePref: -- System Default --
+twDelayAmount:
+twDelayDuration: 00:00:00:00
+twDelayType: None
+twWaitAmount:
+twWaitDayConstraint: None
+twWaitDuration: 00:00:00:00
+twWaitTime: 00:00
+twWaitType: None
+twWorkflowOnly: -- System Default --
+userEstimatedDuration:
+variables: []
+version: 2
+virtualResources: []
+waitForOutput: false

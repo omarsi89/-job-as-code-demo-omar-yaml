@@ -1,0 +1,7 @@
+description:
+exportReleaseLevel: 7.9.1.0
+exportTable: ops_generic_group
+name: stonebranch
+retainSysIds: true
+sysId: 2e6f88d692f34cf8afa878c7196e9d61
+version: 1

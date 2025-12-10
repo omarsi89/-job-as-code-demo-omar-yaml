@@ -1,0 +1,344 @@
+type: taskWorkflow
+actions:
+  abortActions: []
+  emailNotifications: []
+  setVariableActions: []
+  snmpNotifications: []
+  systemOperations: []
+avgRunTime: 235
+avgRunTimeDisplay: 3 Minutes 55 Seconds
+calculateCp: false
+calendar:
+cpDuration:
+cpDurationUnit: Minutes
+criticalEndpoints: []
+customField1:
+  label:
+  value:
+customField2:
+  label:
+  value:
+efDayConstraint: None
+efDuration: 00:00:00:00
+efEnabled: false
+efNthAmount: 5
+efOffsetDuration:
+efOffsetDurationUnit: Minutes
+efOffsetPercentage: 0
+efOffsetType: Percentage
+efTime: 00:00
+efType: Time
+enforceVariables: true
+exclusiveTasks: []
+exclusiveWithSelf: false
+executionRestriction: None
+exportReleaseLevel: 7.9.1.0
+exportTable: ops_task_workflow
+firstRun: 2025-12-04 10:39:09 +0000
+holdResources: false
+instanceWait: -- None --
+instanceWaitLookup: Task
+lastRun: 2025-12-08 10:33:39 +0000
+lastRunTime: 670
+lastRunTimeDisplay: 11 Minutes 10 Seconds
+layoutOption: -- None --
+lfDayConstraint: None
+lfDuration: 00:00:00:00
+lfEnabled: false
+lfNthAmount: 5
+lfOffsetDuration:
+lfOffsetDurationUnit: Minutes
+lfOffsetPercentage: 0
+lfOffsetType: Percentage
+lfTime: 00:00
+lfType: Time
+lockVariables: false
+logLevel: Inherited
+lsDayConstraint: None
+lsDuration: 00:00:00:00
+lsEnabled: false
+lsNthAmount: 5
+lsTime: 00:00
+lsType: Time
+maxRunTime: 670
+maxRunTimeDisplay: 11 Minutes 10 Seconds
+minRunTime: 6
+minRunTimeDisplay: 6 Seconds
+name: Demo-Installation-WF
+notes: []
+numberOfTasks: 9
+opswiseGroups:
+- stonebranch
+overrideCalendar: false
+overrideInstanceWait: "No"
+resPriority: 10
+resPriorityVar:
+resolveNameImmediately: false
+restrictionPeriod: None
+restrictionPeriodAfterDate:
+restrictionPeriodAfterTime:
+restrictionPeriodBeforeDate:
+restrictionPeriodBeforeTime:
+restrictionPeriodDateList: []
+retainSysIds: true
+runCount: 3
+runCriteria:
+- businessDay: false
+  complex: false
+  complexAdjective: Every
+  complexAdjustment: None
+  complexAdjustmentAmount: 1
+  complexAdjustmentType: Day
+  complexNoun:
+    value: Day
+  complexNouns:
+  - value: Day
+  complexNthAmount: 5
+  complexQualifier:
+    value: Year
+  complexQualifiers:
+  - value: Year
+  customDay: false
+  customDayChoice:
+  description:
+  evaluateAt: Trigger Time
+  holiday: false
+  holidayAdjustment: None
+  holidayAdjustmentAmount: 1
+  holidayAdjustmentType: Day
+  specificDay: false
+  specificDayFri: false
+  specificDayMon: false
+  specificDaySat: false
+  specificDaySun: false
+  specificDayThu: false
+  specificDayTue: false
+  specificDayWed: false
+  sysId: 1f01978809794167a091138788485312
+  task: VM - List
+  type: Skip Criteria
+  variable: true
+  variableName: run_vm
+  variableOp: '='
+  variableValue: "no"
+  vertexId: Any
+runTime: 704
+simulation: false
+skippedOption: Show Skipped
+startHeld: false
+startHeldReason:
+stepActions: []
+stepConditions: []
+summary: Install packages
+sysId: b97397aaeb534d7c963d904272c211fc
+timeZonePref: -- System Default --
+twDelayAmount:
+twDelayDuration: 00:00:00:00
+twDelayType: None
+twWaitAmount:
+twWaitDayConstraint: None
+twWaitDuration: 00:00:00:00
+twWaitTime: 00:00
+twWaitType: None
+twWorkflowOnly: -- System Default --
+userEstimatedDuration:
+variables:
+- allowEmptyOption: false
+  allowUnlistedOption: false
+  description:
+  name: email
+  options:
+  - nadim.schamsedin@stonebranch.com
+  - omar.siala@stonebranch.com
+  - ravi.murugesan@stonebranch.com
+  required: false
+  sysId: 562084a491ab44e4b0cb7c43b5df69f2
+  value: nadim.schamsedin@stonebranch.com
+- allowEmptyOption: false
+  allowUnlistedOption: false
+  description:
+  name: run_vm
+  options:
+  - |
+    yes
+  - "no"
+  required: false
+  sysId: 1a15780503df40f5b1545d30c30214a5
+  value: "no"
+- allowEmptyOption: false
+  allowUnlistedOption: false
+  description:
+  name: test1
+  options: []
+  required: false
+  sysId: 98063aaa8fcb4b769c1619f932c98098
+  value: ''
+version: 18
+virtualResources: []
+workflowEdges:
+- condition:
+    value: Success
+  points:
+  - x: '440'
+    y: '270'
+  sourceId:
+    taskName: NS-Upgrade-System
+    value: '6'
+  straightEdge: false
+  targetId:
+    taskName: NS-Check-Storage
+    value: '4'
+- condition:
+    value: Success
+  sourceId:
+    taskName: NS-Install-Packages
+    value: '5'
+  straightEdge: true
+  targetId:
+    taskName: NS-fail-task
+    value: '12'
+- condition:
+    value: Success/Failure
+  sourceId:
+    taskName: NS-fail-task
+    value: '12'
+  straightEdge: true
+  targetId:
+    taskName: NS-Email-Report-Completion
+    value: '14'
+- condition:
+    value: Success
+  sourceId:
+    taskName: NS-Check-Resources
+    value: '3'
+  straightEdge: true
+  targetId:
+    taskName: 'aproval-task '
+    value: '16'
+- condition:
+    value: Failure
+  points:
+  - x: '70'
+    y: '260'
+  sourceId:
+    taskName: NS-Check-Resources
+    value: '3'
+  straightEdge: false
+  targetId:
+    taskName: NS-Upgrade-System
+    value: '6'
+- condition:
+    value: Success
+  sourceId:
+    taskName: 'aproval-task '
+    value: '16'
+  straightEdge: false
+  targetId:
+    taskName: NS-Check-Storage
+    value: '4'
+- condition:
+    value: Success
+  sourceId:
+    taskName: NS-Check-Storage
+    value: '4'
+  straightEdge: false
+  targetId:
+    taskName: NS-Git-Pull
+    value: '29'
+- condition:
+    value: Success
+  sourceId:
+    taskName: NS-Git-Pull
+    value: '29'
+  straightEdge: false
+  targetId:
+    taskName: NS-Install-Packages
+    value: '5'
+- condition:
+    value: Success
+  points:
+  - x: '610'
+    y: '420'
+  sourceId:
+    taskName: NS-Git-Pull
+    value: '29'
+  straightEdge: false
+  targetId:
+    taskName: VM - List
+    value: '32'
+- condition:
+    value: Success
+  points:
+  - x: '1120'
+    y: '410'
+  sourceId:
+    taskName: VM - List
+    value: '32'
+  straightEdge: false
+  targetId:
+    taskName: NS-Email-Report-Completion
+    value: '14'
+workflowVertices:
+- alias:
+  conditionExpression:
+  task:
+    value: NS-Check-Resources
+  vertexId: '3'
+  vertexX: '40'
+  vertexY: '300'
+- alias:
+  conditionExpression:
+  task:
+    value: NS-Check-Storage
+  vertexId: '4'
+  vertexX: '410'
+  vertexY: '300'
+- alias:
+  conditionExpression:
+  task:
+    value: NS-Install-Packages
+  vertexId: '5'
+  vertexX: '740'
+  vertexY: '300'
+- alias:
+  conditionExpression:
+  task:
+    value: NS-Upgrade-System
+  vertexId: '6'
+  vertexX: '220'
+  vertexY: '180'
+- alias:
+  conditionExpression:
+  task:
+    value: NS-fail-task
+  vertexId: '12'
+  vertexX: '910'
+  vertexY: '300'
+- alias:
+  conditionExpression:
+  task:
+    value: NS-Email-Report-Completion
+  vertexId: '14'
+  vertexX: '1090'
+  vertexY: '300'
+- alias:
+  conditionExpression:
+  task:
+    value: 'aproval-task '
+  vertexId: '16'
+  vertexX: '220'
+  vertexY: '300'
+- alias:
+  conditionExpression:
+  task:
+    value: NS-Git-Pull
+  vertexId: '29'
+  vertexX: '580'
+  vertexY: '300'
+- alias:
+  conditionExpression:
+  task:
+    value: VM - List
+  vertexId: '32'
+  vertexX: '830'
+  vertexY: '460'

@@ -1,0 +1,28 @@
+businessDays:
+  value: Monday,Tuesday,Wednesday,Thursday,Friday
+comments: Default System Calendar
+customDays:
+- name: BE-holidays
+  sysId: e278f3c33b074d3e80eaeff7c8cf1e66
+exportReleaseLevel: 7.9.1.0
+exportTable: ops_calendar
+firstDayOfWeek: Sunday
+firstQuarterStart:
+  day: '1'
+  month: Jan
+fourthQuarterStart:
+  day: '1'
+  month: Oct
+localCustomDays: []
+name: belgium-cal
+opswiseGroups:
+- stonebranch
+retainSysIds: true
+secondQuarterStart:
+  day: '1'
+  month: Apr
+sysId: 7eefe557954a4d299cb3d9e7345056f8
+thirdQuarterStart:
+  day: '1'
+  month: Jul
+version: 2
