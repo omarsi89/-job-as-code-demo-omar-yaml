@@ -1,0 +1,36 @@
+content: |
+  #!/bin/bash
+
+  GIT_DIR="${1:-/var/opt/universal}"
+
+  echo "===== PACKAGE INSTALL ====="
+  echo "Git source directory: $GIT_DIR"
+
+
+  echo "Scanning repository for package-like files ..."
+
+  found=1
+  for pkg in $(find "$GIT_DIR" -maxdepth 3 -type f \( -name "*.rpm" -o -name "*.deb" -o -name "*.sh" -o -name "*.tar.gz" -o -name "*.zip" \) 2>/dev/null); do
+      found=1
+      rel="${pkg#$GIT_DIR/}"
+      echo "Simulating install of package: $rel"
+  done
+
+
+  echo "Writing marker to /tmp/ns_install_packages_simulated.flag"
+  date > /tmp/ns_install_packages_simulated.flag
+
+  echo "installation completed successfully."
+  exit 201
+description:
+exportReleaseLevel: 7.9.1.0
+exportTable: ops_script
+notes: []
+opswiseGroups:
+- stonebranch
+resolveVariables: true
+retainSysIds: true
+scriptName: Git-Install-Script
+scriptType: Script
+sysId: 9a75ef6aabe04a1e9b69b15a4275cab6
+version: 8

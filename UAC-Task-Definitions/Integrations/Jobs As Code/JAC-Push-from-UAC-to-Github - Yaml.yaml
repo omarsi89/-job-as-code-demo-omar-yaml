@@ -1,0 +1,249 @@
+type: taskUniversal
+actions:
+  abortActions: []
+  emailNotifications: []
+  setVariableActions: []
+  snmpNotifications: []
+  systemOperations: []
+agent: SB_Linux_Agent
+agentCluster:
+agentClusterVar:
+agentVar:
+autoCleanup: false
+booleanField1:
+  label: UC SSL Certificate  Verification
+  name: uc_ssl_cert_verification
+  value: false
+booleanField2:
+  label: Git Host Verification
+  name: git_ssl_cert_verification
+  value: true
+booleanField3:
+  label: Use Regular Expression
+  name: use_regular_expression
+  value: false
+booleanField4:
+  label: Sign commit
+  name: sign_commit
+  value: false
+broadcastCluster:
+broadcastClusterVar:
+choiceField1:
+  label: Action
+  name: action
+  value: Export to Git Repository
+choiceField10:
+  label: Import Mode
+  name: import_mode
+  value: Generic Webhook and Custom Mode
+choiceField11:
+  label: Git Protocol
+  name: git_protocol
+  value: HTTP(S)
+choiceField2:
+  label: Selection Method
+  name: selection_method
+  value: businessservice
+choiceField3:
+  label: Selection Name
+  name: selection_name
+  value: stonebranch
+choiceField4:
+  label: Selection Exclude List
+  name: selection_exclude_list
+  value:
+choiceField5:
+  label: Git Service Provider
+  name: git_service_provider
+  value: GitHub
+choiceField6:
+  label: Git Repository File Format
+  name: git_repository_file_format
+  value: Yaml
+choiceField7:
+  label: Git Repository
+  name: git_repository
+  value: omarsi89/-job-as-code-demo-omar-yaml
+choiceField8:
+  label: Git Repository Branch
+  name: git_repository_branch
+  value: dev_yaml
+choiceField9:
+  label: Proxy Type
+  name: proxy_type
+  value: -- None --
+cpDuration:
+cpDurationUnit: Minutes
+createConsole: false
+credentialField1:
+  label: Universal Controller Credentials
+  name: uc_credentials
+  value: Controller_credential
+credentialField2:
+  label: Git Credentials
+  name: git_credentials
+  value: osi-Github-demo
+credentialField3:
+  label: Proxy Credentials
+  name: proxy_credentials
+  value:
+credentialField4:
+  label: Signing Credentials
+  name: signing_credentials
+  value:
+credentials:
+credentialsVar:
+customField1:
+  label:
+  value:
+customField2:
+  label:
+  value:
+desktopInteract: false
+efDayConstraint: None
+efDuration: 00:00:00:00
+efEnabled: false
+efNthAmount: 5
+efOffsetDuration:
+efOffsetDurationUnit: Minutes
+efOffsetPercentage: 0
+efOffsetType: Percentage
+efTime: 00:00
+efType: Time
+elevateUser: false
+enforceVariables: false
+environment: []
+exclusiveTasks: []
+exclusiveWithSelf: false
+executionRestriction: None
+exitCodeOutput:
+exitCodeProcessing: Success Exitcode Range
+exitCodeText:
+exitCodes: '0'
+exportReleaseLevel: 7.9.1.0
+exportTable: ops_task_universal
+firstRun: ''
+holdResources: false
+intField1:
+  label: spacing
+  name: spacing
+  value:
+largeTextField1:
+  label: Add UC Definitions List
+  name: add_uc_definitions_list
+  value:
+largeTextField2:
+  label: Modify UC Definitions List
+  name: modify_uc_definitions_list
+  value:
+largeTextField3:
+  label: Remove UC Definitions List
+  name: remove_uc_definitions_list
+  value:
+largeTextField4:
+  label: Webhook Payload (Bitbucket or Azure DevOps)
+  name: webhook_payload
+  value:
+lastRun: ''
+lfDayConstraint: None
+lfDuration: 00:00:00:00
+lfEnabled: false
+lfNthAmount: 5
+lfOffsetDuration:
+lfOffsetDurationUnit: Minutes
+lfOffsetPercentage: 0
+lfOffsetType: Percentage
+lfTime: 00:00
+lfType: Time
+lockVariables: false
+logLevel: Inherited
+lsDayConstraint: None
+lsDuration: 00:00:00:00
+lsEnabled: false
+lsNthAmount: 5
+lsTime: 00:00
+lsType: Time
+name: JAC-Push-from-UAC-to-Github - Yaml
+notes: []
+opswiseGroups:
+- stonebranch
+outputConditionOperator: '='
+outputConditionStrategy: Match Any
+outputConditionValue:
+outputContentType: Text
+outputFailureOnly: false
+outputPathExpression:
+outputReturnFile:
+outputReturnNline:
+outputReturnSline: '1'
+outputReturnText:
+outputReturnType: OUTERR
+outputType: STDOUT
+overrideInstanceWait: "No"
+resPriority: 10
+resPriorityVar:
+resolveNameImmediately: false
+restrictionPeriod: None
+restrictionPeriodAfterDate:
+restrictionPeriodAfterTime:
+restrictionPeriodBeforeDate:
+restrictionPeriodBeforeTime:
+restrictionPeriodDateList: []
+retainSysIds: true
+retryExitCodes:
+retryIndefinitely: false
+retryInterval: 60
+retryMaximum: 0
+retrySuppressFailure: false
+runCount: 0
+runTime: 0
+runtimeDir:
+simulation: false
+startHeld: false
+startHeldReason:
+summary:
+sysId: c2d24b5d4f8b44d8910b5540214c434d
+template: Jobs As Code
+textField1:
+  label: Universal Controller URL
+  name: uc_url
+  value: https://umicore.stonebranchdev.cloud/
+textField2:
+  label: Git Service Provider URL
+  name: git_service_provider_url
+  value: https://github.com
+textField3:
+  label: Git Repository Path
+  name: git_repository_path
+  value: UAC-Task-Definitions
+textField4:
+  label: Proxy
+  name: proxy
+  value:
+textField5:
+  label: Proxy CA Bundle File
+  name: proxy_ca_bundle_file
+  value:
+textField6:
+  label: Git Commit Message (export)
+  name: git_commit_message
+  value: Push from UAC
+textField9:
+  label: Git Repository
+  name: git_repository_ssh
+  value:
+timeZonePref: -- System Default --
+twDelayAmount:
+twDelayDuration: 00:00:00:00
+twDelayType: None
+twWaitAmount:
+twWaitDayConstraint: None
+twWaitDuration: 00:00:00:00
+twWaitTime: 00:00
+twWaitType: None
+twWorkflowOnly: -- System Default --
+userEstimatedDuration:
+variables: []
+version: 2
+virtualResources: []
+waitForOutput: false

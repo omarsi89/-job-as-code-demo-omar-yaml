@@ -1,0 +1,188 @@
+type: taskApproval
+actions:
+  abortActions: []
+  emailNotifications:
+  - bcc:
+    body: |-
+      Hello,
+
+      Please approve the Approval task : ${ops_task_name} to continue with the subsequent task Execution
+
+      Use the following link to view the task instance:
+      ${UAC_URL}?action=open&type=exec&id=${ops_task_id}
+
+
+      Regards,
+      Stonebranch Operations
+    cc:
+    description:
+    emailConnection: email
+    emailTemplate:
+    emailTemplateVar:
+    exitCodes:
+    listReportFormat: PDF
+    notifyOnEarlyFinish: false
+    notifyOnLateFinish: false
+    notifyOnLateStart: false
+    notifyOnProjectedLate: false
+    replyTo:
+    report:
+    reportVar:
+    status: Approval Required
+    subject: Approval Required
+    sysId: bf52c4232f4f49b695e2fafcc8f209bd
+    to: ${email}
+  setVariableActions: []
+  snmpNotifications: []
+  systemOperations:
+  - agent:
+    agentCluster:
+    agentClusterVar:
+    agentVar:
+    description:
+    execCommand: Cancel
+    execCriteria: Oldest Active Instance
+    execId:
+    execLookupOption: Instance Name
+    execName:
+    execWorkflowName:
+    execWorkflowNameCond: Equals
+    exitCodes:
+    limit:
+    notificationOption: Operation Failure
+    notifyOnEarlyFinish: false
+    notifyOnLateFinish: false
+    notifyOnLateStart: false
+    notifyOnProjectedLate: false
+    operation: Launch Task
+    overrideTriggerDateOffset:
+    overrideTriggerDateTime: false
+    overrideTriggerTime: 00:00
+    status: Approval Required
+    sysId: 9cc247ed59d940a19e726726004dde03
+    task: Approval Notification to Teams
+    taskLimitType: Unlimited
+    taskVar:
+    trigger:
+    triggerVar:
+    variables:
+    - name: task_status
+      value: ${ops_status}
+    - name: job_name
+      value: ${ops_task_name}
+    - name: job_type
+      value: ${ops_task_type}
+    - name: invoked_by
+      value: ${ops_workflow_name}
+    - name: exec_user
+      value: ${ops_execution_user}
+    - name: desc
+      value: ${ops_description}
+    variablesUnresolved: false
+    vertexSelection: false
+    vertices: []
+    virtualResource:
+    virtualResourceVar:
+approvalCriteria:
+  criteria:
+  - type: criterion
+    user: Omar
+    userDisplayName: omar siala
+  - type: criterion
+    user: nadim
+    userDisplayName: nadim schamsedin
+  - type: criterion
+    user: ravi
+    userDisplayName: ravi murugesan
+  logicalOperator: Or
+approvalDescription:
+approvalLinks: []
+avgRunTime: 339
+avgRunTimeDisplay: 5 Minutes 39 Seconds
+cpDuration:
+cpDurationUnit: Minutes
+customField1:
+  label:
+  value:
+customField2:
+  label:
+  value:
+efDayConstraint: None
+efDuration: 00:00:00:00
+efEnabled: false
+efNthAmount: 5
+efOffsetDuration:
+efOffsetDurationUnit: Minutes
+efOffsetPercentage: 0
+efOffsetType: Percentage
+efTime: 00:00
+efType: Time
+enforceVariables: false
+exclusiveTasks: []
+exclusiveWithSelf: false
+executionRestriction: None
+exportReleaseLevel: 7.9.1.0
+exportTable: ops_task_approval
+firstRun: 2025-12-04 13:57:55 +0000
+holdResources: false
+lastRun: 2025-12-08 10:33:30 +0000
+lastRunTime: 660
+lastRunTimeDisplay: 11 Minutes 0 Seconds
+lfDayConstraint: None
+lfDuration: 00:00:00:00
+lfEnabled: false
+lfNthAmount: 5
+lfOffsetDuration:
+lfOffsetDurationUnit: Minutes
+lfOffsetPercentage: 0
+lfOffsetType: Percentage
+lfTime: 00:00
+lfType: Time
+lockVariables: false
+logLevel: Inherited
+lsDayConstraint: None
+lsDuration: 00:00:00:00
+lsEnabled: false
+lsNthAmount: 5
+lsTime: 00:00
+lsType: Time
+maxRunTime: 660
+maxRunTimeDisplay: 11 Minutes 0 Seconds
+minRunTime: 18
+minRunTimeDisplay: 18 Seconds
+name: 'aproval-task '
+notes: []
+opswiseGroups:
+- Nadim Schamsedin
+overrideInstanceWait: "No"
+resPriority: 10
+resPriorityVar:
+resolveNameImmediately: false
+restrictionPeriod: None
+restrictionPeriodAfterDate:
+restrictionPeriodAfterTime:
+restrictionPeriodBeforeDate:
+restrictionPeriodBeforeTime:
+restrictionPeriodDateList: []
+retainSysIds: true
+runCount: 2
+runTime: 678
+simulation: false
+startHeld: false
+startHeldReason:
+summary:
+sysId: 87e060e47f914e31a298dee68591aee8
+timeZonePref: -- System Default --
+twDelayAmount:
+twDelayDuration: 00:00:00:00
+twDelayType: None
+twWaitAmount:
+twWaitDayConstraint: None
+twWaitDuration: 00:00:00:00
+twWaitTime: 00:00
+twWaitType: None
+twWorkflowOnly: -- System Default --
+userEstimatedDuration:
+variables: []
+version: 3
+virtualResources: []

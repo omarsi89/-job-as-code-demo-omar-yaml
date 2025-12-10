@@ -1,0 +1,172 @@
+type: taskUniversal
+actions:
+  abortActions: []
+  emailNotifications: []
+  setVariableActions: []
+  snmpNotifications: []
+  systemOperations: []
+agent: SB_Linux_Agent
+agentCluster:
+agentClusterVar:
+agentVar:
+autoCleanup: false
+avgRunTime: 1
+avgRunTimeDisplay: 1 Seconds
+booleanField1:
+  label: Accept Hostkey
+  name: accept_hostkey
+  value: false
+broadcastCluster:
+broadcastClusterVar:
+choiceField1:
+  label: Branch Name
+  name: branch_name
+  value: main
+choiceField2:
+  label: Action
+  name: action
+  value: checkout
+choiceField3:
+  label: Authentication Method
+  name: authentication_method
+  value: http_access_token
+cpDuration:
+cpDurationUnit: Minutes
+createConsole: false
+credentialField1:
+  label: HTTP(S) Credentials
+  name: http_credentials
+  value:
+credentialField2:
+  label: SSH Key
+  name: ssh_key
+  value:
+credentialField3:
+  label: Access Token
+  name: access_token_credentials
+  value: KM-GitHub-Demo
+credentials:
+credentialsVar:
+customField1:
+  label:
+  value:
+customField2:
+  label:
+  value:
+desktopInteract: false
+efDayConstraint: None
+efDuration: 00:00:00:00
+efEnabled: false
+efNthAmount: 5
+efOffsetDuration:
+efOffsetDurationUnit: Minutes
+efOffsetPercentage: 0
+efOffsetType: Percentage
+efTime: 00:00
+efType: Time
+elevateUser: false
+enforceVariables: false
+environment: []
+exclusiveTasks: []
+exclusiveWithSelf: false
+executionRestriction: None
+exitCodeOutput:
+exitCodeProcessing: Success Exitcode Range
+exitCodeText:
+exitCodes: '0'
+exportReleaseLevel: 7.9.1.0
+exportTable: ops_task_universal
+firstRun: 2025-12-04 13:30:47 +0000
+holdResources: false
+lastRun: 2025-12-08 10:33:33 +0000
+lastRunTime: 1
+lastRunTimeDisplay: 1 Seconds
+lfDayConstraint: None
+lfDuration: 00:00:00:00
+lfEnabled: false
+lfNthAmount: 5
+lfOffsetDuration:
+lfOffsetDurationUnit: Minutes
+lfOffsetPercentage: 0
+lfOffsetType: Percentage
+lfTime: 00:00
+lfType: Time
+lockVariables: false
+logLevel: Inherited
+lsDayConstraint: None
+lsDuration: 00:00:00:00
+lsEnabled: false
+lsNthAmount: 5
+lsTime: 00:00
+lsType: Time
+maxRunTime: 2
+maxRunTimeDisplay: 2 Seconds
+minRunTime: 1
+minRunTimeDisplay: 1 Seconds
+name: NS-Git-Pull
+notes: []
+opswiseGroups: []
+outputConditionOperator: '='
+outputConditionStrategy: Match Any
+outputConditionValue:
+outputContentType: Text
+outputFailureOnly: false
+outputPathExpression:
+outputReturnFile:
+outputReturnNline: '100'
+outputReturnSline: '1'
+outputReturnText:
+outputReturnType: OUTERR
+outputType: STDOUT
+overrideInstanceWait: "No"
+resPriority: 10
+resPriorityVar:
+resolveNameImmediately: false
+restrictionPeriod: None
+restrictionPeriodAfterDate:
+restrictionPeriodAfterTime:
+restrictionPeriodBeforeDate:
+restrictionPeriodBeforeTime:
+restrictionPeriodDateList: []
+retainSysIds: true
+retryExitCodes:
+retryIndefinitely: false
+retryInterval: 60
+retryMaximum: 0
+retrySuppressFailure: false
+runCount: 4
+runTime: 5
+runtimeDir:
+simulation: false
+startHeld: false
+startHeldReason:
+summary:
+sysId: f3b05f419beb45aeaaf8daddaa9d1ce6
+template: Git
+textField2:
+  label: Path
+  name: path
+  value: /var/opt/universal
+textField3:
+  label: Repository URL
+  name: repository
+  value: https://github.com/Karthik16m/terraform-azure.git
+timeZonePref: -- System Default --
+twDelayAmount:
+twDelayDuration: 00:00:00:00
+twDelayType: None
+twWaitAmount:
+twWaitDayConstraint: None
+twWaitDuration: 00:00:00:00
+twWaitTime: 00:00
+twWaitType: None
+twWorkflowOnly: -- System Default --
+userEstimatedDuration:
+variables: []
+version: 5
+virtualResources:
+- amount: 1
+  resource: ALL_JOBS
+  resourceVar:
+  sysId: cdcb05d3bd094546979630767fea0362
+waitForOutput: false

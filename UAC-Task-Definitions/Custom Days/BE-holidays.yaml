@@ -1,0 +1,26 @@
+adjustment: None
+adjustmentAmount: 1
+adjustmentType: Day
+category: Holiday
+comments:
+ctype: List of Dates
+date:
+dateList:
+- '2025-12-24'
+- '2025-12-25'
+- '2025-12-26'
+day: 1
+dayofweek: Sun
+exportReleaseLevel: 7.9.1.0
+exportTable: ops_custom_day
+holiday: true
+month: Jan
+name: BE-holidays
+nthAmount: 1
+nthType: Day
+observedRules: []
+period: false
+relfreq: 1st
+retainSysIds: true
+sysId: e985f82494e04e309e5a8ddbe9b824db
+version: 1
