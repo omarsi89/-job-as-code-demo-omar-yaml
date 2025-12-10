@@ -10,8 +10,8 @@ agentCluster:
 agentClusterVar:
 agentVar:
 autoCleanup: false
-avgRunTime: 4
-avgRunTimeDisplay: 4 Seconds
+avgRunTime: 5
+avgRunTimeDisplay: 5 Seconds
 booleanField1:
   label: UC SSL Certificate  Verification
   name: uc_ssl_cert_verification
@@ -146,9 +146,9 @@ largeTextField4:
   label: Webhook Payload (Bitbucket or Azure DevOps)
   name: webhook_payload
   value:
-lastRun: 2025-12-10 08:32:05 +0000
-lastRunTime: 4
-lastRunTimeDisplay: 4 Seconds
+lastRun: 2025-12-10 10:13:55 +0000
+lastRunTime: 5
+lastRunTimeDisplay: 5 Seconds
 lfDayConstraint: None
 lfDuration: 00:00:00:00
 lfEnabled: false
@@ -167,8 +167,8 @@ lsEnabled: false
 lsNthAmount: 5
 lsTime: 00:00
 lsType: Time
-maxRunTime: 4
-maxRunTimeDisplay: 4 Seconds
+maxRunTime: 5
+maxRunTimeDisplay: 5 Seconds
 minRunTime: 4
 minRunTimeDisplay: 4 Seconds
 name: JAC-list_pre-push-tasks
@@ -203,8 +203,8 @@ retryIndefinitely: false
 retryInterval: 60
 retryMaximum: 0
 retrySuppressFailure: false
-runCount: 2
-runTime: 8
+runCount: 4
+runTime: 18
 runtimeDir:
 simulation: false
 startHeld: false
